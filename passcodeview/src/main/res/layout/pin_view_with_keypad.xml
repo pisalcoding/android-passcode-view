@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/pins_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key1"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="1" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key2"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="2" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key3"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key4"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="4" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key5"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="5" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key6"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key7"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="7" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key8"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="8" />
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key9"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            android:background="#00ffffff"
+            android:clipChildren="true"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/key_clear"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:text="C"
+                android:textColor="#fff" />
+        </androidx.cardview.widget.CardView>
+
+        <me.pisal.passcodeview.SingleKeyView
+            android:id="@+id/key0"
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            app:skKey="0" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/keypad_key_size"
+            android:layout_height="@dimen/keypad_key_size"
+            android:layout_margin="8dp"
+            android:background="#00ffffff"
+            android:clipChildren="true"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/key_backspace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_delete_key" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

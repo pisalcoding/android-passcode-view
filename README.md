@@ -33,3 +33,9 @@ dependencies {
     app:pcPinCount="4"/>
 ```
 
+```kotlin
+pinAuthView.onFilled = { pin ->
+    // Use the pin value when the pin value is filled
+}
+```
+

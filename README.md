@@ -20,7 +20,7 @@ repositories {
 > Step 2: Add this your app build.gradle
 ```java
 dependencies {
-    implementation 'com.github.pisalcoding:android-passcode-view:1.0.0'
+	implementation 'com.github.pisalcoding:android-passcode-view:Tag'
 }
 ```
 

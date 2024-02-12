@@ -1,6 +1,7 @@
 
 
-# AndroidPasscodeView
+# Android Passcode View
+[![](https://jitpack.io/v/pisalcoding/android-passcode-view.svg)](https://jitpack.io/#pisalcoding/android-passcode-view)
 
 A simple passcode view similar to iOS lock screen.
 <div style="text-align:center; width: 100%;">
